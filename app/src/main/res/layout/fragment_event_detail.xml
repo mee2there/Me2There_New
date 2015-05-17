@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="firstapp.ashley.com.firstapp.EventDetail$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/activity_image"
+        android:layout_width="122px"
+        android:layout_height="122px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/event_name"
+        android:text="@string/hello_world"
+        style="@style/CustomFontStyle.LargeFont.Blue" />
+
+    <TextView
+        android:id="@+id/event_desc"
+        android:text="@string/hello_world"
+        style="@style/CustomFontStyle.MediumFont.Black"/>
+
+    <TextView
+        android:id="@+id/event_time"
+        android:text="@string/hello_world"
+        style="@style/CustomFontStyle.SmallFont.Black" />
+
+</LinearLayout>

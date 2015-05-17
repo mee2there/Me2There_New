@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_title"
+        android:hint="@string/activity_title"
+        android:singleLine="true"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/edit_title"
+        android:hint="@string/activity_desc"
+        android:id="@+id/edit_desc" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_desc"
+        android:id="@+id/edit_date"
+        android:text="@string/pick_date" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_date"
+        android:id="@+id/editPhone"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:clickable="true"
+        android:hint="Phone" />
+
+    <Button
+        android:text="Select a photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPhone"
+        android:id="@+id/selectImage"
+        android:onClick="pickPhoto" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectImage"
+        android:id="@+id/pick_location"
+        android:text="@string/activity_location" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pick_location"
+        android:id="@+id/create_btn"
+        android:text="@string/create_activity" />
+
+    <ImageView
+        android:layout_below="@+id/create_btn"
+        android:id="@+id/actImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
